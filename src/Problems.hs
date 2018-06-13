@@ -28,7 +28,7 @@ addThree :: Int -> Int -> Int -> Int
 addThree x y z = x + y + z
 
 fact :: Int -> Int
-fact n | trace ("fact abc: " ++ show n) $ False = undefined
+-- fact n | trace ("fact abc: " ++ show n) $ False = undefined
 fact n = product [1..n]
 
 fact' :: Int -> Int

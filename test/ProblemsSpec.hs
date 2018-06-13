@@ -17,5 +17,13 @@ spec = do
 
   describe "lists" $ do
     it "returns the last element" $
-      myLast [1,2,3] `shouldBe`3
+      myLast [1,2,3] `shouldBe` 3
+    it "computes the empty list length" $
+      listLength []   `shouldBe` 0
+    it "computes the filled list length" $
+      listLength [30, (-1), 2, 0] `shouldBe` 4
+
+  describe "algebra" $ do
+    it "computes the faculty" $
+      fact 6 `shouldBe` 720
 

@@ -4,8 +4,10 @@ module ProblemsSpec where
 import Test.Hspec
 import Problems
 
-main :: IO ()
-main = hspec $ do
+-- main :: IO ()
+-- main = hspec $ do
+
+spec = do
   describe "misc" $ do
     it "reads negative integer from string" $
       read "-1" `shouldBe` (-1)

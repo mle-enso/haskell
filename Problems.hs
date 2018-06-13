@@ -1,3 +1,5 @@
+module Problems where
+
 import Debug.Trace (trace, traceShow)
 
 myLast :: [a] -> a

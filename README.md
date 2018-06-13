@@ -7,5 +7,3 @@ After cloning the repository and [installing Stack](https://docs.haskellstack.or
 `stack test`
 to run the tests and build the library.
 
-You now can take further information from `/target/generated-docs/index.html` .
-

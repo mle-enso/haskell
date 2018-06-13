@@ -27,3 +27,8 @@ spec = do
     it "computes the faculty" $
       fact 6 `shouldBe` 720
 
+  describe "the pending feature" $ do
+    it "should be tested later" $
+      pending
+    it "should be tested later, with justification" $
+      pendingWith "need to fix base64 first"

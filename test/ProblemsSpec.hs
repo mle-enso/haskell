@@ -32,3 +32,18 @@ spec = do
       pending
     it "should be tested later, with justification" $
       pendingWith "need to fix base64 first"
+
+  describe "Gauß' champaign glas pings" $ do
+    it "implementation 1 should compute the correct count for 3 people" $
+      countGlasPings 3 `shouldBe` 3
+    it "implementation 1 should compute the correct count for 13 people" $
+      countGlasPings 13 `shouldBe` 78
+    it "implementation 1 should compute the correct count for 3.9 people" $
+      countGlasPings 3.9 `shouldBe` 3
+    it "implementation 2 should compute the correct count for 3 people" $
+      countGlasPings' 3 `shouldBe` 3
+    it "implementation 2 should compute the correct count for 13 people" $
+      countGlasPings' 13 `shouldBe` 78
+    it "implementation 2 should compute the correct count for 3.9 people" $
+      countGlasPings 3.9 `shouldBe` 3
+

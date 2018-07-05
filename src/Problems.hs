@@ -66,4 +66,11 @@ flatten (List x) = concatMap flatten x
 
 --
 
+countGlasPings :: Double -> Double
+countGlasPings n
+               = let lower = fromIntegral (floor n)
+                 in lower * (lower - 1) / 2
+
+countGlasPings' n = ((floor n) * (floor n - 1)) `div` 2
+--
 
